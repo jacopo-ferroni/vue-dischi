@@ -46,7 +46,7 @@ methods : {
         axios.get('https://flynn.boolean.careers/exercises/api/array/music')
         .then( (response) => {
             // handle success
-            /* this.musics = response.data.response; */
+            this.musics = response.data.response;
             console.log(response)
         })
         .catch(function (error) {
@@ -86,7 +86,7 @@ methods : {
         svg {
             color: white;
             width: 100px;
-            animation: scale 2s infinite alternate;
+            animation: scale 1s infinite alternate;
         }
             @keyframes scale {
                 from {

@@ -25,18 +25,38 @@ export default {
 
 <style scoped lang="scss">
 .music-box2 {
+    text-align: center;
+    background: #2e3a46;
     display: flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     .img {
-        width: 80%;
+        width: 100%;
+        height: 110px;
         img {
             width: 100%;
-            height: 100%;
             object-fit: contain;
         }
-        
+    }
+    h5 {
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+    .author {
+        font-size: 10px;
+        color: #757d80;
+    }
+    .year {
+        font-size: 10px;
+        color: #757d80;
+    }
+    .genere {
+        font-size: 10px;
+        color: white;
+
     }
 }
 </style>

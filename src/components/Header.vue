@@ -14,7 +14,10 @@ name : `Header`,
 <style scopes lang="scss">
 .header {
     background: #2e3a46;
-    height: 10%;
+    height: 10vh;
+    top: 0%;
+    left: 0%;
+    width: 100%;
     img {
         height: 100%;
         padding: 10px;

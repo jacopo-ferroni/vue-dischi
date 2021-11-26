@@ -23,42 +23,15 @@
 <script>
 import Card from '@/components/Card.vue';
 
+
 export default {
-name : `Main`,
-components : {
-    Card,
-},
-
-data() {
-    return {
-        musics : [],
-    }
-},
-
-created() {
-    this.card()
-},
-
-methods : {
-    card () {
-        const axios = require('axios');
-        
-        axios.get('https://flynn.boolean.careers/exercises/api/array/music')
-        .then( (response) => {
-            // handle success
-            this.musics = response.data.response;
-            console.log(response)
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-        .then(function () {
-            // always executed
-        });
-        
-    }
-}
+    name : `Main`,
+    props : {
+        musics : Array,
+    },
+    components : {
+        Card,
+    },
 }
 </script>
 
